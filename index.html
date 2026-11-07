@@ -439,6 +439,104 @@
         font-size: 35px;
       }
     }
+    
+/* RONG & ROOP CLOTHING SHOP */
+
+.shop-section {
+  background: #fffdf9;
+}
+
+.shop-intro {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 35px;
+  color: #806f65;
+}
+
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.product-card {
+  background: #f5eee5;
+  overflow: hidden;
+}
+
+.product-card img {
+  height: 350px;
+  object-fit: cover;
+  transition: transform .5s;
+}
+
+.product-card:hover img {
+  transform: scale(1.04);
+}
+
+.product-info {
+  padding: 20px;
+}
+
+.product-info h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 23px;
+  color: #704d46;
+  font-weight: 500;
+}
+
+.product-info p {
+  font-size: 13px;
+  color: #806f65;
+  margin: 8px 0 15px;
+}
+
+.product-price {
+  color: #704d46;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.product-info .button {
+  text-align: center;
+}
+
+.shop-note {
+  text-align: center;
+  margin-top: 30px;
+  color: #806f65;
+  font-size: 12px;
+}
+
+@media (max-width: 750px) {
+  .shop-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .product-card img {
+    height: 230px;
+  }
+
+  .product-info {
+    padding: 12px;
+  }
+
+  .product-info h3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 420px) {
+  .shop-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card img {
+    height: 330px;
+  }
+}
   </style>
 </head>
 
@@ -599,6 +697,100 @@
         </article>
       </div>
     </section>
+
+<section class="shop-section" id="shop">
+  <div class="section-heading">
+    <div class="eyebrow">The Rong & Roop Boutique</div>
+    <h2>Discover Our Collection</h2>
+  </div>
+
+  <p class="shop-intro">
+    Explore thoughtfully selected styles inspired by
+    South Asian traditions and contemporary fashion.
+    Every piece is an expression of culture and creativity.
+  </p>
+
+  <div class="shop-grid">
+
+    <article class="product-card">
+      <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=700&q=85"
+           alt="Traditional South Asian outfit"
+           loading="lazy">
+      <div class="product-info">
+        <h3>Traditional Collection</h3>
+        <p>Elegant designs inspired by timeless traditions.</p>
+        <div class="product-price">Contact for price</div>
+        <a href="#contact" class="button">Enquire Now</a>
+      </div>
+    </article>
+
+    <article class="product-card">
+      <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=700&q=85"
+           alt="Women's fashion dress"
+           loading="lazy">
+      <div class="product-info">
+        <h3>Handmade Dresses</h3>
+        <p>Beautiful creations made with care and love.</p>
+        <div class="product-price">Contact for price</div>
+        <a href="#contact" class="button">Enquire Now</a>
+      </div>
+    </article>
+
+    <article class="product-card">
+      <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=700&q=85"
+           alt="Modern everyday fashion"
+           loading="lazy">
+      <div class="product-info">
+        <h3>Everyday Styles</h3>
+        <p>Modern and comfortable fashion for everyday wear.</p>
+        <div class="product-price">Contact for price</div>
+        <a href="#contact" class="button">Enquire Now</a>
+      </div>
+    </article>
+
+    <article class="product-card">
+      <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=700&q=85"
+           alt="Fashion collection"
+           loading="lazy">
+      <div class="product-info">
+        <h3>Custom Creations</h3>
+        <p>Personalized styles designed around your preferences.</p>
+        <div class="product-price">Custom pricing</div>
+        <a href="#contact" class="button">Request Custom Order</a>
+      </div>
+    </article>
+
+    <article class="product-card">
+      <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=700&q=85"
+           alt="Contemporary fashion inspiration"
+           loading="lazy">
+      <div class="product-info">
+        <h3>Festive Collection</h3>
+        <p>Special styles for celebrations and memorable moments.</p>
+        <div class="product-price">Contact for price</div>
+        <a href="#contact" class="button">Enquire Now</a>
+      </div>
+    </article>
+
+    <article class="product-card">
+      <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=700&q=85"
+           alt="Elegant fashion inspiration"
+           loading="lazy">
+      <div class="product-info">
+        <h3>Signature Designs</h3>
+        <p>Unique fashion inspired by culture and individuality.</p>
+        <div class="product-price">Contact for price</div>
+        <a href="#contact" class="button">Enquire Now</a>
+      </div>
+    </article>
+
+  </div>
+
+  <p class="shop-note">
+    Product photographs are illustrative examples.
+    Actual designs, availability and prices will be updated soon.
+  </p>
+</section>
 
     <section class="story" id="about">
       <div class="story-layout">
