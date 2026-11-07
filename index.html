@@ -537,6 +537,83 @@
     height: 330px;
   }
 }
+    
+/* RONG & ROOP BEAUTY STUDIO */
+
+.beauty-section {
+  background: #f5eee5;
+}
+
+.beauty-intro {
+  max-width: 650px;
+  margin: 0 auto 35px;
+  text-align: center;
+  color: #806f65;
+}
+
+.beauty-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.beauty-card {
+  background: #fffdf9;
+  overflow: hidden;
+}
+
+.beauty-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.beauty-info {
+  padding: 22px;
+}
+
+.beauty-info h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  color: #704d46;
+  font-weight: 500;
+}
+
+.beauty-info p {
+  color: #806f65;
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 10px 0 16px;
+}
+
+.beauty-price {
+  color: #704d46;
+  font-weight: 700;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.beauty-info .button {
+  text-align: center;
+}
+
+.beauty-note {
+  text-align: center;
+  color: #806f65;
+  font-size: 12px;
+  margin-top: 30px;
+}
+
+@media (max-width: 650px) {
+  .beauty-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .beauty-card img {
+    height: 300px;
+  }
+}
+
   </style>
 </head>
 
@@ -789,6 +866,92 @@
   <p class="shop-note">
     Product photographs are illustrative examples.
     Actual designs, availability and prices will be updated soon.
+  </p>
+</section>
+
+<section class="beauty-section" id="beauty">
+  <div class="section-heading">
+    <div class="eyebrow">The Rong & Roop Beauty Studio</div>
+    <h2>Beauty, Elegance & Confidence</h2>
+  </div>
+
+  <p class="beauty-intro">
+    From timeless bridal looks to elegant party makeup,
+    we celebrate your beauty with thoughtful makeup
+    and hairstyling services.
+  </p>
+
+  <div class="beauty-grid">
+
+    <article class="beauty-card">
+      <img
+        src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=900&q=85"
+        alt="Bridal beauty inspiration"
+        loading="lazy">
+      <div class="beauty-info">
+        <h3>Bridal Makeup</h3>
+        <p>
+          Elegant bridal makeup for your special day,
+          inspired by South Asian beauty and traditions.
+        </p>
+        <div class="beauty-price">Request a quote</div>
+        <a href="#contact" class="button">Book an Enquiry</a>
+      </div>
+    </article>
+
+    <article class="beauty-card">
+      <img
+        src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=85"
+        alt="Professional makeup inspiration"
+        loading="lazy">
+      <div class="beauty-info">
+        <h3>Party & Event Makeup</h3>
+        <p>
+          Beautiful makeup looks for parties, celebrations,
+          birthdays and special occasions.
+        </p>
+        <div class="beauty-price">Request a quote</div>
+        <a href="#contact" class="button">Book an Enquiry</a>
+      </div>
+    </article>
+
+    <article class="beauty-card">
+      <img
+        src="https://images.unsplash.com/photo-1523263685509-57c1d050d19b?auto=format&fit=crop&w=900&q=85"
+        alt="Hairstyling inspiration"
+        loading="lazy">
+      <div class="beauty-info">
+        <h3>Hairstyling</h3>
+        <p>
+          From soft curls to elegant updos,
+          find a hairstyle that completes your look.
+        </p>
+        <div class="beauty-price">Request a quote</div>
+        <a href="#contact" class="button">Book an Enquiry</a>
+      </div>
+    </article>
+
+    <article class="beauty-card">
+      <img
+        src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=900&q=85"
+        alt="Beauty consultation inspiration"
+        loading="lazy">
+      <div class="beauty-info">
+        <h3>Beauty Consultation</h3>
+        <p>
+          Discuss your preferred makeup style, hairstyle
+          and beauty needs before your special occasion.
+        </p>
+        <div class="beauty-price">Contact for details</div>
+        <a href="#contact" class="button">Get in Touch</a>
+      </div>
+    </article>
+
+  </div>
+
+  <p class="beauty-note">
+    Photos are illustrative examples. Actual services,
+    availability and pricing will be confirmed upon enquiry.
   </p>
 </section>
 
