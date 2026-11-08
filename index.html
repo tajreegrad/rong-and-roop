@@ -729,6 +729,146 @@
   }
 }
 
+/* RONG & ROOP: RESPONSIVE DESIGN */
+
+/* Prevent unwanted horizontal scrolling */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Make sections fit different screen sizes */
+section {
+  width: 100%;
+}
+
+.hero,
+.story,
+.shop-section,
+.beauty-section,
+.enquiry-section {
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+/* Tablet screens */
+@media (max-width: 900px) {
+  .shop-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .beauty-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-heading h2 {
+    font-size: 32px;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 650px) {
+
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    padding: 12px 5%;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 12px;
+  }
+
+  .hero,
+  .story,
+  .shop-section,
+  .beauty-section,
+  .enquiry-section {
+    padding: 45px 5%;
+  }
+
+  .hero h1 {
+    font-size: clamp(32px, 9vw, 48px);
+    line-height: 1.2;
+  }
+
+  .section-heading h2 {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .shop-grid,
+  .beauty-grid,
+  .enquiry-grid,
+  .contact-details {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .product-card img,
+  .beauty-card img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .product-info,
+  .beauty-info {
+    padding: 18px;
+  }
+
+  .button {
+    display: inline-block;
+    max-width: 100%;
+    padding: 12px 18px;
+  }
+
+  .contact-item {
+    padding: 20px;
+  }
+
+  footer {
+    padding: 25px 5%;
+    text-align: center;
+  }
+}
+
+/* Small mobile screens */
+@media (max-width: 380px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .section-heading h2 {
+    font-size: 25px;
+  }
+
+  nav a {
+    font-size: 11px;
+  }
+}
+    
+
   </style>
 </head>
 
